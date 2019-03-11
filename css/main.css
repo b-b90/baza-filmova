@@ -24,6 +24,10 @@ header a {
     color: black;
 }
 
+header a:hover {
+    color: black;
+}
+
 header ul {
     display: flex;
     list-style: none;
@@ -39,6 +43,7 @@ header ul li {
 
 header ul li:hover {
     background: white;
+    color: black;
 }
 
 header ul li:first-child {
