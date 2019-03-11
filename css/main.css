@@ -24,6 +24,10 @@ header a {
     color: black;
 }
 
+header a:hover {
+    color: black;
+}
+
 header ul {
     display: flex;
     list-style: none;
