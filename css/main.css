@@ -3,25 +3,26 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
-    height: 100vh;
-    background: linear-gradient(to bottom right, 
-    #def131, 
-    #e6a10c);
+    background: linear-gradient(to bottom right, #def131, #e6a10c);
 }
+
 .forma {
     text-align: center;
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
     background-color: rgb(59, 97, 10);
     padding: 45px;
     color: #f0d909;
 }
+
 label {
     font-size: 20px;
 }
+
 #slika {
     font-size: 20px;
     background-color: rgb(113, 170, 38);
@@ -40,9 +41,11 @@ input {
     color: white;
     text-align: center;
 }
+
 #preview {
     margin-top: 20px;    
 }
+
 #ok {
     background-color: #f0d909;
     border-radius: 10px;
