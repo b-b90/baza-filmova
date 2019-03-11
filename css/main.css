@@ -53,7 +53,84 @@ input {
     padding: 4px 16px;
 }
 
+.okvir {
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+}
 
+header, footer, main {
+    grid-column: 1 / 4;
+}
 
+header {
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+header a {
+    color: black;
+}
 
+header a:hover {
+    color: black;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    border: 1px solid black;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+header ul li:hover {
+    background: white;
+    color: black;
+}
+
+header ul li:first-child {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+header ul li:last-child {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header ul li + li {
+    border-left: 0;
+}
+
+main {
+    background: greenyellow;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+main h2 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+main h3 {
+    text-transform: capitalize;
+}
+
+main img {
+    margin-bottom: 40px;
+}
+
+footer {
+    background: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
