@@ -39,6 +39,7 @@ header ul li {
 
 header ul li:hover {
     background: white;
+    color: black;
 }
 
 header ul li:first-child {
