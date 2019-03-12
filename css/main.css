@@ -67,7 +67,7 @@ header, footer, main {
 }
 
 header {
-    background: rgb(80, 79, 79);
+    background: rgb(47, 48, 66);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,9 +94,13 @@ header ul li {
     font-weight: 700;
     background: rgb(105, 151, 45);
 }
+header ul li:hover a {
+    color: rgb(105, 151, 45);
+    text-decoration: none;
+}
 header ul li:hover {
+    color: rgb(105, 151, 45);
     background: #f0d909;
-    color: black;
 }
 
 header ul li:first-child {
@@ -114,7 +118,7 @@ header ul li + li {
 }
 
 main {
-    background: greenyellow;
+    background: rgb(105, 151, 45);
     padding: 70px 20px;
     text-align: center;
 }
@@ -146,4 +150,13 @@ font-size: 60px;
 
 padding-bottom: 55px;
 
+}
+img {
+    max-width: 100%;
+}
+h3 {
+    color: #f0d909;
+}
+h2 {
+    color: rgb(47, 48, 66);
 }
