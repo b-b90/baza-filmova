@@ -67,11 +67,7 @@ header, footer, main {
 }
 
 header {
-<<<<<<< HEAD
     background: rgb(80, 79, 79);
-=======
-    background: rgb(55, 57, 82);
->>>>>>> ae2f271b3ff4fdf0a142b59620c8b587558d7a94
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,14 +96,7 @@ header ul li {
 }
 header ul li:hover {
     background: #f0d909;
-<<<<<<< HEAD
     color: black;
-=======
-}
-header ul li:hover a {
-    color: rgb(80, 141, 0);
-    text-decoration: none;
->>>>>>> ae2f271b3ff4fdf0a142b59620c8b587558d7a94
 }
 
 header ul li:first-child {
