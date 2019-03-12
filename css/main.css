@@ -66,14 +66,14 @@ header, footer, main {
 }
 
 header {
-    background: gray;
+    background: rgb(80, 79, 79);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 header a {
-    color: black;
+    color: #f0d909;
 }
 
 header a:hover {
@@ -94,7 +94,7 @@ header ul li {
 }
 
 header ul li:hover {
-    background: white;
+    background: #f0d909;
     color: black;
 }
 
