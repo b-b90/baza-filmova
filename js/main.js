@@ -1,7 +1,5 @@
-fetch("https://github.com/skolakoda/baza-filmova-api")
-    .then(function(response) {
-        response.json();
-    })
-    .then(function(response) {
-        console.log(response)
-    })
+fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data)
+  })
