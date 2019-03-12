@@ -7,16 +7,17 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
-    background: linear-gradient(to bottom right, #def131, #e6a10c);
+    /* background: linear-gradient(to bottom right, #f0d909, #d46904); */
+    background-color: rgb(250, 247, 83);
 }
 
 .forma {
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    background-color: rgb(59, 97, 10);
+    background-color: rgb(105, 151, 45);
     padding: 45px;
-    color: #f0d909;
+    color: #facc00;
 }
 
 label {
@@ -36,10 +37,11 @@ input {
     outline: 0;
     border-width: 0 0 1px;
     padding-bottom: 10px;
-    border-color: white;
-    background-color: rgb(59, 97, 10);
-    color: white;
+    border-color: #fae900;
+    background-color: rgb(105, 151, 45);
+    color: rgb(47, 48, 66);
     text-align: center;
+    font-size: 25px;
 }
 
 #preview {
@@ -49,8 +51,7 @@ input {
 #ok {
     background-color: #f0d909;
     border-radius: 10px;
-    color: rgb(59, 97, 10);
-    margin-top: 15px;
+    color: rgb(92, 145, 23);
     font-weight: bold;
     border: 0;
     padding: 4px 16px;
@@ -58,7 +59,7 @@ input {
 
 .okvir {
     display: grid;
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 100px auto 80px;
 }
 
 header, footer, main {
@@ -66,7 +67,11 @@ header, footer, main {
 }
 
 header {
+<<<<<<< HEAD
     background: rgb(80, 79, 79);
+=======
+    background: rgb(55, 57, 82);
+>>>>>>> ae2f271b3ff4fdf0a142b59620c8b587558d7a94
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,16 +91,23 @@ header ul {
 }
 
 header ul li {
-    border: 1px solid black;
+    /* border: 1px solid rgb(47, 48, 61); */
     text-transform: uppercase;
     padding: 10px 20px;
     cursor: pointer;
     font-weight: 700;
+    background: rgb(105, 151, 45);
 }
-
 header ul li:hover {
     background: #f0d909;
+<<<<<<< HEAD
     color: black;
+=======
+}
+header ul li:hover a {
+    color: rgb(80, 141, 0);
+    text-decoration: none;
+>>>>>>> ae2f271b3ff4fdf0a142b59620c8b587558d7a94
 }
 
 header ul li:first-child {
@@ -132,8 +144,17 @@ main img {
 }
 
 footer {
-    background: brown;
+    background: rgb(47, 48, 66);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(80, 141, 0);
+}
+
+main h1{
+
+font-size: 60px;
+
+padding-bottom: 55px;
+
 }
