@@ -145,3 +145,10 @@ font-size: 60px;
 padding-bottom: 55px;
 
 }
+.dugmad{
+    display: flex;
+}
+.dugmici{
+    margin: 5px;
+    border-radius: 50%;
+}
