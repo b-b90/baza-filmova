@@ -8,16 +8,16 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
     /* background: linear-gradient(to bottom right, #f0d909, #d46904); */
-    background-color: rgb(250, 247, 83);
+    background-color: rgb(248, 215, 66);
 }
 
 .forma {
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    background-color: rgb(105, 151, 45);
+    background-color: white;
     padding: 45px;
-    color: #facc00;
+    color: rgb(255, 216, 44); 
 }
 
 label {
@@ -26,7 +26,7 @@ label {
 
 #slika {
     font-size: 20px;
-    background-color: rgb(113, 170, 38);
+    background-color: white;
 }
 
 input {
@@ -36,11 +36,11 @@ input {
     outline: 0;
     border-width: 0 0 1px;
     padding-bottom: 10px;
-    border-color: #fae900;
-    background-color: rgb(105, 151, 45);
+    border-color: rgb(248, 215, 66);
+    background-color: white;
     color: rgb(47, 48, 66);
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #preview {
@@ -48,9 +48,9 @@ input {
 }
 
 #ok {
-    background-color: #f0d909;
+    background-color: rgb(241, 215, 99);
     border-radius: 10px;
-    color: rgb(92, 145, 23);
+    color: rgb(84, 109, 51);
     font-weight: bold;
     border: 0;
     padding: 4px 16px;
@@ -73,7 +73,7 @@ header {
 }
 
 header a {
-    color: #f0d909;
+    color: rgb(248, 215, 66);
 }
 
 header a:hover {
@@ -91,15 +91,15 @@ header ul li {
     padding: 10px 20px;
     cursor: pointer;
     font-weight: 700;
-    background: rgb(105, 151, 45);
+    background: white;
 }
 header ul li:hover a {
-    color: rgb(105, 151, 45);
+    color: rgb(47, 48, 66);
     text-decoration: none;
 }
 header ul li:hover {
     color: rgb(105, 151, 45);
-    background: #f0d909;
+    background: rgb(241, 215, 99);
 }
 
 header ul li:first-child {
@@ -117,7 +117,7 @@ header ul li + li {
 }
 
 main {
-    background: rgb(105, 151, 45);
+    background: white;
     padding: 70px 20px;
     text-align: center;
 }
@@ -140,7 +140,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(80, 141, 0);
+    color: rgb(241, 215, 99);
 }
 
 main h1{
@@ -156,7 +156,7 @@ font-size: 60px;
 }
 .dugmad input {
     cursor: pointer;
-    border: 1px solid #f0d909;
+    border: 1px solid #faa200;
     text-transform: uppercase;
     padding: 10px 20px;
     border-radius: 10px;
@@ -167,8 +167,11 @@ img {
     max-width: 100%;
 }
 h3 {
-    color: #f0d909;
+    color: #fac000;
 }
 h2 {
     color: rgb(47, 48, 66);
+}
+h4 {
+    color: #faa200;
 }
