@@ -31,7 +31,7 @@ label {
 
 input {
     display: block;
-    height: 30px;
+    min-height: 30px;
     margin: 0 auto;
     outline: 0;
     border-width: 0 0 1px;
@@ -147,7 +147,7 @@ main h1{
 
 font-size: 60px;
 
-padding-bottom: 55px;
+/* padding-bottom: 55px; */
 
 }
 
@@ -156,6 +156,12 @@ padding-bottom: 55px;
 }
 .dugmad input {
     cursor: pointer;
+    border: 1px solid #f0d909;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 img {
     max-width: 100%;
