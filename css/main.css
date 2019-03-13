@@ -31,7 +31,6 @@ label {
 
 input {
     display: block;
-    width: 300px;
     height: 30px;
     margin: 0 auto;
     outline: 0;
@@ -155,9 +154,8 @@ padding-bottom: 55px;
 .dugmad{
     display: flex;
 }
-.dugmici{
-    margin: 5px;
-    border-radius: 50%;
+.dugmad input {
+    cursor: pointer;
 }
 img {
     max-width: 100%;
