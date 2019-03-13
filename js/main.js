@@ -26,5 +26,8 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
     document.querySelector("#due img").src = nngodine[1].slika;
     document.querySelector("#tre h3").innerHTML = nngodine[2].naziv;
     document.querySelector("#tre img").src = nngodine[2].slika;
+   
+   
+    
 
   })

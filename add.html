@@ -32,16 +32,17 @@
             </header>
 
             <main class="forma">
-                <label for="ime">Naziv filma:</label>
-                <input type="text">
-                <label for="reditelj">Reditelj:</label>
-                <input type="text">
-                <label for="glumci">Glumci:</label>
-                <input type="text">
-                <label for="slika">Slika URL:</label>
-                <input type="text">
-                <div id="preview"><img src="https://via.placeholder.com/400" alt=""></div>
-                <button id="ok" >OK</button>
+
+                <form action="https://baza-filmova.herokuapp.com/dodaj-film/" method="POST">
+                    <label for="naziv">Naziv filma:</label>
+                    <input type="text" name="naziv" id="naziv">
+                    <label for="godina">Godina:</label>
+                    <input type="text" name="godina" id="godina">
+                    <label for="slika">Slika URL:</label>
+                    <input type="text" name="slika" id="slika">
+                    <div id="preview"><img src="https://via.placeholder.com/400" alt=""></div>
+                    <button type="submit" id="ok" value="submit">OK</button>
+                </form>
             </main>
 
             <footer>
@@ -53,6 +54,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <script src="js/main.js"></script>
+    <script src="js/add.js"></script>
 </body>
 </html>
