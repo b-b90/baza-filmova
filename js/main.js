@@ -10,22 +10,28 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
 
    
     const godine = [];
-    let ngodine = [];
-    let nngodine =[];
 
     for(i = 0; i < data.length; i++) {
       godine.push(data[i]);
     }
-    ngodine = godine.sort();
-    nngodine = ngodine.reverse();
-    console.log(nngodine)
 
-    document.querySelector("#uno h3").innerHTML = nngodine[0].naziv;
-    document.querySelector("#uno img").src = nngodine[0].slika;
-    document.querySelector("#due h3").innerHTML = nngodine[1].naziv;
-    document.querySelector("#due img").src = nngodine[1].slika;
-    document.querySelector("#tre h3").innerHTML = nngodine[2].naziv;
-    document.querySelector("#tre img").src = nngodine[2].slika;
+    function compare(a,b) {
+      if (a.godina < b.godina)
+        return -1;
+      if (a.godina > b.godina)
+        return 1;
+      return 0;
+    }
+    
+    godine.sort(compare);
+    godine.reverse();
+
+    document.querySelector("#uno h3").innerHTML = godine[0].naziv;
+    document.querySelector("#uno img").src = godine[0].slika;
+    document.querySelector("#due h3").innerHTML = godine[1].naziv;
+    document.querySelector("#due img").src = godine[1].slika;
+    document.querySelector("#tre h3").innerHTML = godine[2].naziv;
+    document.querySelector("#tre img").src = godine[2].slika;
    
    
     

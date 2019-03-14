@@ -8,6 +8,7 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
     for(let i = 0; i < data.length; i++) {
       sablon += `<div class='col-md-3'>
                     <h4>${data[i].naziv}</h4>
+                    <h5>${data[i].godina}</h5>
                     <img src='${data[i].slika}'>
                   </div>`;
     }
@@ -24,6 +25,7 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
             if(data[i].naziv.includes(provera)) {
                 pretraga +=  `<div class='col-md-3'>
                                  <h4>${data[i].naziv}</h4>
+                                 <h5>${data[i].godina}</h5>
                                  <img src='${data[i].slika}'>
                               </div>`;
             }
@@ -55,7 +57,7 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
       for(let i = 0; i < godine.length; i++) {
         sablon += `<div class='col-md-3'>
                       <h4>${godine[i].naziv}</h4>
-                      <h4>${godine[i].godina}</h4>
+                      <h5>${godine[i].godina}</h5>
                       <img src='${godine[i].slika}'>
                     </div>`;
       }
@@ -87,7 +89,7 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
       for(let i = godine.length - 1; i >= 0; i--) {
         sablon += `<div class='col-md-3'>
                       <h4>${godine[i].naziv}</h4>
-                      <h4>${godine[i].godina}</h4>
+                      <h5>${godine[i].godina}</h5>
                       <img src='${godine[i].slika}'>
                     </div>`;
       }
@@ -119,7 +121,7 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
       for(let i = 0; i <godine.length; i++) {
         sablon += `<div class='col-md-3'>
                       <h4>${godine[i].naziv}</h4>
-                      <h4>${godine[i].godina}</h4>
+                      <h5>${godine[i].godina}</h5>
                       <img src='${godine[i].slika}'>
                     </div>`;
       }
@@ -151,11 +153,26 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
       for(let i = godine.length - 1; i >= 0; i--) {
         sablon += `<div class='col-md-3'>
                       <h4>${godine[i].naziv}</h4>
-                      <h4>${godine[i].godina}</h4>
+                      <h5>${godine[i].godina}</h5>
                       <img src='${godine[i].slika}'>
                     </div>`;
       }
 
       $('#filmovi').html(sablon);
     })
+
+    // prikaz u drugom prozoru
+    // $('.col-md-3').on('click', function() {
+    //   let h4 = $(this).find('h4');
+    //   let naslov = h4[0].innerText;
+    //   let h5 = $(this).find('h5');
+    //   let godina = h5[0].innerText;
+    //   let img = $(this).find('img');
+    //   let slika = img[0].src;
+    //   $('.ovde h4').text = naslov;
+    //   $('.ovde h5').innerText = godina;
+    //   $('.ovde img').src = slika;
+    //   window.location.href = "prikaz.html";
+    // })
+
 })
