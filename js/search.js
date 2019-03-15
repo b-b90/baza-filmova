@@ -1,3 +1,4 @@
+
 fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
   .then(res => res.json())
   .then(data => {
@@ -162,17 +163,19 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
     })
 
     // prikaz u drugom prozoru
-    // $('.col-md-3').on('click', function() {
-    //   let h4 = $(this).find('h4');
-    //   let naslov = h4[0].innerText;
-    //   let h5 = $(this).find('h5');
-    //   let godina = h5[0].innerText;
-    //   let img = $(this).find('img');
-    //   let slika = img[0].src;
-    //   $('.ovde h4').text = naslov;
-    //   $('.ovde h5').innerText = godina;
-    //   $('.ovde img').src = slika;
-    //   window.location.href = "prikaz.html";
-    // })
+    $('.col-md-3').on('click', function() {
+      let h4 = $(this).find('h4');
+      let naslov = h4[0].innerText;
+      let h5 = $(this).find('h5');
+      let godina = h5[0].innerText;
+      let img = $(this).find('img');
+      let slika = img[0].src;
+
+      localStorage.setItem('naslov', naslov);
+      localStorage.setItem('godina', godina);
+      localStorage.setItem('slika', slika);
+      
+      window.location.href = "prikaz.html";
+    })
 
 })
