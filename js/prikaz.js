@@ -3,10 +3,6 @@ var naslov = localStorage.getItem('naslov');
 var godina = localStorage.getItem('godina');
 var slika = localStorage.getItem('slika');
 
-// document.querySelector(".ovde h4").innerHTML = naslov;
-// document.querySelector(".ovde h5").innerHTML = godina;
-// document.querySelector(".ovde img").src = slika;
-
 fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
   .then(res => res.json())
   .then(data => {
@@ -24,7 +20,10 @@ fetch('https://baza-filmova.herokuapp.com/filmovi/ ')
 
                 for (let j = 0; j < data[i].komentari.length; j++) {
 
-                    $('.ovde').append()
+                    $('.ovde').append(`
+                                        <h3>${data[i].komentari[j].user}</h3>
+                                        <p>${data[i].komentari[j].comment}</p>
+                    `)
 
                     console.log(data[i].komentari[j].user);
                     console.log(data[i].komentari[j].comment);
